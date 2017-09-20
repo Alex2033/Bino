@@ -148,21 +148,21 @@ section
 	border-bottom: 1px solid transparent
 	padding-top: 20px
 	padding-bottom: 20px
+	transition: all .45s
 	&:last-of-type
 		margin-right: 0
 	&:hover
 		color: $main-color
 		border-bottom: 1px solid $main-color
-		transition: all .45s
 
 .touch-menu
 	margin-top: 10px
 	font-size: 26px
 	float: right
 	display: none
+	transition: .25s
 	&:hover
 		color: $main-color
-		transition: .25s
 
 .home
 	color: #fff
@@ -229,17 +229,17 @@ section
 	margin-bottom: 20px
 	font-family: 'Open Sans', sans-serif
 	box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25)
+	transition: all .25s
 	&:hover
 		background-color: #ef6354
-		transition: all .25s
 
 .white-btn
 	background-color: transparent
 	border: 1px solid white
 	margin-left: 25px
 	min-width: 130px
+	transition: all .25s
 	&:hover
-		transition: all .25s
 		background-color: transparent
 		color: #c7c7c7
 		border-color: #c7c7c7
@@ -332,12 +332,14 @@ section
 
 .feature-item
 	margin-bottom: 40px
+	.feature-item-icon
+		transition: all .35s
+	.h4
+		transition: all .35s
 	&:hover
 		.feature-item-icon
-			transition: all .35s
 			border-color: $main-color
-		.h4
-			transition: all .35s
+		.h4	
 			color: $main-color
 
 .feature-item-icon
@@ -458,11 +460,12 @@ section
 	.row
 		margin-left: 0
 		margin-right: 0
+	.work-item-overlay
+		transition: all .35s
 	.work-item
 		position: relative
 		&:hover .work-item-overlay
 			opacity: 1
-			transition: all .35s
 
 .tabs-padding
 	padding-left: 17px
@@ -685,13 +688,14 @@ section
 				span
 					display: block
 					line-height: 22px
-					color: $content-color		
+					color: $content-color
+	.pricing-item-header,
+	.btn, .icon .icon-gray-ellipse .number-of-price
+		transition: .45s
 	&:hover .pricing-item-header,
 	&:hover .btn
 		background-color: $main-color
-		transition: .45s
 	&:hover .icon .icon-gray-ellipse .number-of-price
-		transition: .45s
 		color: $main-color
 
 .pricing-item-header
@@ -737,8 +741,9 @@ section
 	position: absolute
 	display: inline-block
 	cursor: pointer
-	&:hover .team-item-circle
+	.team-item-circle
 		transition: .5s
+	&:hover .team-item-circle
 		width: 86px
 		height: 86px
 		box-shadow: 0px 5px 12.75px 2.25px rgba(0, 0, 0, 0.004)
@@ -762,30 +767,33 @@ section
 .team-item-first
 	bottom: 205px
 	left: 230px
+	transition: .5s
 	&:hover
 		bottom: 190px
-		transition: .5s
 
 .team-item-second
 	bottom: 275px
 	left: 520px
+	transition: .5s
 	&:hover
 		bottom: 260px
-		transition: .5s
+		
 
 .team-item-third
 	bottom: 305px
 	left: 770px
+	transition: .5s
 	&:hover
 		bottom: 290px
-		transition: .5s
+		
 
 .team-item-fourth
 	bottom: 290px
 	left: 1030px
+	transition: .5s
 	&:hover
 		bottom: 275px
-		transition: .5s
+		
 	
 .team-item-circle
 	margin-left: auto
@@ -946,9 +954,10 @@ svg.responsive-triangle
 	line-height: 24px
 	font-style: italic
 	font-weight: 600
+	transition: .25s
 	&:hover
 		color: #d0cfcf
-		transition: .25s
+		
 
 .contact
 	padding-bottom: 122px
@@ -1050,6 +1059,7 @@ svg.responsive-triangle
 	display: flex
 	align-items: center
 	justify-content: center
+	transition: .25s
 	&:hover
 		opacity: 1
 	.fa
@@ -1083,8 +1093,8 @@ svg.responsive-triangle
 		.fa
 			font-size: 22px
 			color: $content-color
+			transition: .35s
 			&:hover, &:focus, &:active
-				transition: .35s
 				color: $main-color
 
 .popup-fast
